@@ -67,6 +67,10 @@ usage: image_downloader.py [-h] [--engine {Google,Bing,Baidu}]
 ```
 
 ## License
-
 + MIT License
 + 996ICU License
+
+
+## selenium版本不能太高   否则会报错，类似： AttributeError：type object "DesiredCapabilities" has no attribute "PHANTOMJS"
+python3.9/  python3.8.8  对应的selenium版本是3.5.0    如果pip失败，采用国内镜像源
+pip install --index https://pypi.tuna.tsinghua.edu.cn/simple selenium==3.5.0
